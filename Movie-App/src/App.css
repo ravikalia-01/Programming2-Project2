@@ -1,0 +1,246 @@
+/* General Styles */
+#root {
+   width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.site {
+  display: flex;
+}
+.logo {
+  width: 30px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+input[type="text"], input[type="number"], select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+  border-color: #6200ea;
+  outline: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f1f1f;
+  width: -webkit-fill-available;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #6200ea;
+}
+
+/* Main Page Layout */
+.homepage, .search-page, .add-movie-page, .categories-page, .profile-page {
+  padding: 20px;
+  max-width: 1300px;
+  margin: 20px auto;
+  background-color: #1c1c1c;
+  margin-top: 100px; /* To avoid overlap with fixed header */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Filters */
+.filters {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.filters select, .filters input {
+  width: 25%;
+}
+
+/* Movie List */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.movie-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Loading / Error Messages */
+p {
+  color: #bdbdbd;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.movie-card p strong {
+  color: #6200ea;
+}
+
+/* Add Movie Page */
+.add-movie-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-added-movies {
+  margin-top: 20px;
+
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  
+}
+
+.user-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 280px;
+}
+
+.add-movie-page input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.add-movie-page button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #03dac5;
+}
+
+.add-movie-page button:hover {
+  background-color: #018786;
+}
+
+/* Profile Page */
+.profile-page p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Categories Page */
+.categories-page h2 {
+  text-align: center;
+}
+.categories-page ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  
+}
+
+.categories-page li {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  margin: 10px 0;
+}
+
+.categories-page li:hover {
+  color: #6200ea;
+  cursor: pointer;
+}
