@@ -31,13 +31,7 @@ const SearchPage = () => {
     <div className="search-page">
       <h2>Search for Movies</h2>
       <form onSubmit={handleSearch}>
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search movies..."
-          required
-        />
+        <input  type="text"  value={query}  onChange={(e) => setQuery(e.target.value)}  placeholder="Search movies..."  required/>
         <button type="submit">Search</button>
       </form>
 

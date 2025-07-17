@@ -70,12 +70,7 @@ const HomePage = ({ userMovies }) => {
           <option value="h">Long</option>
         </select>
 
-        <input
-          type="number"
-          placeholder="Min Rating"
-          value={ratingFilter}
-          onChange={handleRatingFilter}
-        />
+        <input  type="number"  placeholder="Min Rating"  value={ratingFilter}  onChange={handleRatingFilter}/>
 
         <select onChange={handleTypeFilter} value={typeFilter}>
           <option value="">Type</option>
