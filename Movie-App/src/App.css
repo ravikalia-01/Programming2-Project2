@@ -187,6 +187,7 @@ p {
 }
 
 .user-added-movies {
+
   margin-top: 20px;
 
   background-color: #2c2c2c;
@@ -196,9 +197,9 @@ p {
 
 .user-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  max-width: 280px;
+  
+  gap: 20px;
+  max-width: fit-content;
 }
 
 .add-movie-page input {
